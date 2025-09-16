@@ -7,7 +7,7 @@
 #*                --app: Appliction name to map, this is case sensitive 
 #*                --legend: Include a legend and mechanism guide in the diagram.
 #*  
-#*  Verion: 01
+#*  Verion: 02
 #*  Author: Mike DeLaet
 #*
 #*  Version Notes:
@@ -20,6 +20,7 @@ import pandas as pd
 import argparse
 import os
 from graphviz import Digraph
+version = "2.0"
 
 
 def get_label(row):
@@ -271,6 +272,7 @@ g.render(output_file)
 
 
 print(f"Graph generated as {output_file}.{graph_format}")
+
 
 
 
